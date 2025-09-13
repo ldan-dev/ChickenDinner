@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <!--
+     AUTOR: LEONARDO DANIEL AVIÑA NERI
+     GRUPO: 6PRAM
+     TODOS LOS DERECHOS RESERVADOS
+     -->
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_home">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/titan_one"
+                android:gravity="center"
+                android:paddingTop="50dp"
+                android:paddingBottom="15dp"
+                android:text="@string/h_bienvenido"
+                android:textColor="@color/blue_800"
+                android:textSize="34sp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="100dp"
+                android:padding="4dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/coiny"
+                        android:text="@string/h_ingresos_totales"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/h_tv_ingresos_totales"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/coiny"
+                        android:text="@string/h_"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/coiny"
+                        android:text="@string/h_inversion_total"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/h_tv_inversion_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/coiny"
+                        android:text="@string/h_"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/coiny"
+                        android:text="@string/h_ganancia_neta"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/h_tv_ganancia_neta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/coiny"
+                        android:text="@string/h_"
+                        android:textSize="20sp" />
+                </TableRow>
+
+
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/h_tb_guia_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:background="@color/blue_800">
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/coiny"
+                    android:gravity="center_horizontal"
+                    android:text="@string/guia_titulo"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="6dp"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/ic_home_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/textView44"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/coiny"
+                        android:padding="4dp"
+                        android:text="@string/guia_home"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="6dp"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/sale" />
+
+                    <TextView
+                        android:id="@+id/textView45"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/coiny"
+                        android:padding="4dp"
+                        android:text="@string/guia_addVentas"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="6dp"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:id="@+id/imageViefw6"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/ic_plus" />
+
+                    <TextView
+                        android:id="@+id/textVsiew45"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/coiny"
+                        android:padding="4dp"
+                        android:text="@string/guia_addProducto"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="6dp"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:id="@+id/imageVaiew6"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/profit" />
+
+                    <TextView
+                        android:id="@+id/taextView45"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/coiny"
+                        android:padding="4dp"
+                        android:text="@string/guia_ver_ventas"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="6dp"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:id="@+id/imagiew6"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/product" />
+
+                    <TextView
+                        android:id="@+id/textViewc45"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/coiny"
+                        android:padding="4dp"
+                        android:text="@string/guia_ver_productos"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </TableRow>
+
+
+            </TableLayout>
+
+            <Button
+                android:id="@+id/h_btn_guia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="4dp"
+                android:backgroundTint="@color/colorAccent"
+                android:fontFamily="@font/coiny"
+                android:text="@string/guia_titulo"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="70dp"
+                android:layout_weight="3"
+                android:fontFamily="@font/coiny"
+                android:text="@string/autor"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

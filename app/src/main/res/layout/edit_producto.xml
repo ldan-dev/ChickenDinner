@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--
+     AUTOR: LEONARDO DANIEL AVIÑA NERI
+     GRUPO: 6PRAM
+     TODOS LOS DERECHOS RESERVADOS
+     -->
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/textView35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/coiny"
+                        android:text="@string/n_nombre"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/edit_et_nombre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:fontFamily="@font/coiny"
+                        android:hint="@string/n_nombre"
+                        android:inputType="text"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/textView38"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/coiny"
+                        android:text="@string/n_costo"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/edit_et_costo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:fontFamily="@font/coiny"
+                        android:hint="@string/n_costo"
+                        android:inputType="number|numberDecimal"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/textView39"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/coiny"
+                        android:text="@string/n_cantidad"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/edit_et_cantidad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:fontFamily="@font/coiny"
+                        android:hint="@string/n_cantidad"
+                        android:inputType="number|numberDecimal"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/coiny"
+                        android:text="@string/n_numero_compra"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/edit_et_numero_compra"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:editable="true"
+                        android:ems="10"
+                        android:enabled="true"
+                        android:fontFamily="@font/coiny"
+                        android:hint="@string/n_numero_compra"
+                        android:inputType="number|numberDecimal"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/coiny"
+                        android:text="@string/n_precio_venta"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/edit_et_precio_venta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:editable="true"
+                        android:ems="10"
+                        android:fontFamily="@font/coiny"
+                        android:hint="@string/n_precio_venta"
+                        android:inputType="number|numberDecimal"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="right">
+
+                    <Button
+                        android:id="@+id/edit_btn_costear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/coiny"
+                        android:text="@string/btnCostear"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/coiny"
+                        android:text="@string/n_precio_unitario"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/edit_et_precio_unitario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:editable="false"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:fontFamily="@font/coiny"
+                        android:hint="@string/n_precio_unitario"
+                        android:inputType="number|numberDecimal"
+                        android:textSize="20sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/coiny"
+                        android:text="@string/n_precio_recome_des"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/edit_et_precio_recomendado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:editable="true"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:fontFamily="@font/coiny"
+                        android:hint="@string/n_precio_recomendado"
+                        android:inputType="number|numberDecimal"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/coiny"
+                        android:text="@string/n_ingresos"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/edit_et_ingresos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:editable="false"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:fontFamily="@font/coiny"
+                        android:hint="@string/n_ingresos"
+                        android:inputType="number|numberDecimal"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/coiny"
+                        android:text="@string/n_ganancia_neta"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/edit_et_ganancia_neta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:editable="false"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:fontFamily="@font/coiny"
+                        android:hint="@string/n_ganancia_neta"
+                        android:inputType="number|numberDecimal"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/coiny"
+                        android:text="@string/n_ganancia_unitaria"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/edit_et_ganancia_unitaria"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:editable="false"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:fontFamily="@font/coiny"
+                        android:hint="@string/n_ganancia_unitaria"
+                        android:inputType="number|numberDecimal"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/coiny"
+                        android:text="@string/n_porcentaje_ganancia"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/edit_et_porcentaje_ganancia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:editable="false"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:fontFamily="@font/coiny"
+                        android:hint="@string/n_porcentaje_ganancia"
+                        android:inputType="number|numberDecimal"
+                        android:textSize="20sp" />
+                </TableRow>
+
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="70dp"
+                android:layout_weight="3"
+                android:fontFamily="@font/coiny"
+                android:text="@string/autor"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,89 @@
+<resources>
+    <!--
+     AUTOR: LEONARDO DANIEL AVIÑA NERI
+     GRUPO: 6PRAM
+     TODOS LOS DERECHOS RESERVADOS
+     -->
+
+    <!-- MENU -->
+    <string name="autor">LEONARDO DANIEL AVIÑA NERI</string>
+    <string name="app_name">Chicken Dinner</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">add Ventas</string>
+    <string name="title_notifications">add Producto</string>
+    <string name="title_show_ventas">Ver ventas</string>
+    <string name="title_show_products">ver productos</string>
+
+    <!-- BUTTONS -->
+    <string name="btnAñadir">Añadir</string>
+    <string name="btnEditar">Editar</string>
+    <string name="btnBorrar">Borrar</string>
+    <string name="btnCancelar">Cancelar</string>
+    <string name="btnCostear">Hacer costos</string>
+
+    <!-- HOME -->
+    <string name="h_bienvenido">Bienvenido querido usuario</string>
+    <string name="h_inversion_total">Inversión total:</string>
+    <string name="h_ingresos_totales">Ingresos totales:</string>
+    <string name="h_ganancia_neta">Ganancia neta:</string>
+    <string name="h_productos">ver productos:</string>
+    <string name="h_ventas">ver ventas:</string>
+    <string name="h_">000 </string>
+
+    <!-- GUIA DE USUARIO -->
+    <string name="guia_titulo"> Guía de usuario </string>
+    <string name="guia_icono"> función </string>
+    <string name="guia_home">Home: \n\nPágina de inicio, contiene un breve resumen de las finanzas y la guía de usuario </string>
+    <string name="guia_addVentas">addVentas: \n\nEn este apartado se añaden las ventas en el que registras el día, los productos vendidos y los ingresos obtenidos</string>
+    <string name="guia_addProducto"> addProducto:\n\nEn este apartado se añaden nuevos productos\nRecuerda dar clic en el botón \'Costear\'
+        antes de aceptar para que puedas observar como serán las finanzas del producto. Así mismo cuando en este apartado quieras cambiar algún dato tienes que
+    dar clic en el botón mencionado</string>
+    <string name="guia_ver_ventas"> Ver ventas:\n\nEn este apartado podrás ver las ventas, editarlas o eliminarlas según tus necesidades </string>
+    <string name="guia_ver_productos"> Ver productos:\n\nEn este apartado podrás ver los productos, editar cualquier dato o eliminarlo según tus necesidades </string>
+
+    <!-- DASHBOARD (add_ventas) -->
+    <string name="d_desc">En este apartado podrás añadir ventas</string>
+    <string name="d_dia">Día:</string>
+    <string name="d_productos">Productos:</string>
+    <string name="d_vacio">Parece que aún no has añadido productos  </string>
+    <string name="d_cantidad">Cantidad</string>
+    <string name="d_"> </string>
+
+    <!-- NOTIFICATION (add Producto) -->
+    <string name="n_descr">En este apartado podrás añadir nuevos productos</string>
+    <string name="n_nombre">Nombre</string>
+    <string name="n_costo">Costo</string>
+    <string name="n_cantidad">Cantidad</string>
+    <string name="n_precio_unitario">Precio unitario</string>
+    <string name="n_precio_venta">Precio venta</string>
+    <string name="n_precio_recome_des">Precio recomendado</string>
+    <string name="n_precio_recomendado">Ganancia de 70%</string>
+    <string name="n_ingresos">Ingresos</string>
+    <string name="n_ganancia_neta">Ganancia neta</string>
+    <string name="n_ganancia_unitaria">Ganancia unitaria</string>
+    <string name="n_porcentaje_ganancia">Porcentaje ganancia</string>
+    <string name="n_numero_compra">Número de compra</string>
+    <string name="n_"> </string>
+
+    <!-- SHOW_VENTAS (ver ventas) -->
+    <string name="sv_add_venta">En este apartado podrás añadir ventas </string>
+    <string name="sv_titulo">En este apartado podrás ver las ventas </string>
+    <string name="sv_vacio">Parece que aún no has añadido ningún producto  </string>
+    <string name="sv_dia">Día</string>
+    <string name="sv_productos"> Productos</string>
+    <string name="sv_ingresos">Ingresos</string>
+    <string name="sv_">                                </string>
+    <string name="sv_tbIntermedia"> Tabla intermedia                               </string>
+
+    <!-- SHOW_PRODUCTOS (ver PRODUCTOS) -->
+    <string name="sp_titulo">En este apartado podrás ver los productos </string>
+    <string name="sp_vacio">Parece que aún no has añadido nada aqui  </string>
+    <string name="sp_id">id  </string>
+
+    <!-- SHOW_VENTA_PRODUCTOS (ver PRODUCTOS) -->
+    <string name="svp_venta_id">venta_id   </string>
+    <string name="svp_producto_id">producto_id   </string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

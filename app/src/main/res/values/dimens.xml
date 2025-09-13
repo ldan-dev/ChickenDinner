@@ -1,0 +1,10 @@
+<resources>
+    <!--
+    AUTOR: LEONARDO DANIEL AVIÑA NERI
+    GRUPO: 6PRAM
+    TODOS LOS DERECHOS RESERVADOS
+    -->   <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+</resources>

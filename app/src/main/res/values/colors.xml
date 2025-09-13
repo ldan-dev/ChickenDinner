@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ AUTOR: LEONARDO DANIEL AVIÑA NERI
+ GRUPO: 6PRAM
+ TODOS LOS DERECHOS RESERVADOS
+ -->
+
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#1E88E5</color>
+    <color name="colorPrimaryDark">#0d2d83</color>
+    <color name="colorAccent">#ff6416</color>
+    <color name="colorAccentDark">#E44E02</color>
+    <color name="red">#FF0505</color>
+    <color name="green">#26CF2D</color>
+
+    <!-- Blue 50 -->
+    <color name="blue_50">#E3F2FD</color>
+    <!-- Blue 100 -->
+    <color name="blue_100">#BBDEFB</color>
+    <!-- Blue 200 -->
+    <color name="blue_200">#90CAF9</color>
+    <!-- Blue 300 -->
+    <color name="blue_300">#64B5F6</color>
+    <!-- Blue 400 -->
+    <color name="blue_400">#42A5F5</color>
+    <!-- Blue 500 -->
+    <color name="blue_500">#2196F3</color>
+    <!-- Blue 600 -->
+    <color name="blue_600">#1E88E5</color>
+    <!-- Blue 700 -->
+    <color name="blue_700">#1976D2</color>
+    <!-- Blue 800 -->
+    <color name="blue_800">#1565C0</color>
+    <!-- Blue 900 -->
+    <color name="blue_900">#0D47A1</color>
+    <!-- Blue A100 -->
+    <color name="blue_A100">#82B1FF</color>
+    <!-- Blue A200 -->
+    <color name="blue_A200">#448AFF</color>
+    <!-- Blue A400 -->
+    <color name="blue_A400">#2979FF</color>
+    <!-- Blue A700 -->
+    <color name="blue_A700">#2962FF</color>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+     AUTOR: LEONARDO DANIEL AVIÑA NERI
+     GRUPO: 6PRAM
+     TODOS LOS DERECHOS RESERVADOS
+     -->
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/sale"
+        android:title="@string/title_dashboard" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/ic_plus"
+        android:title="@string/title_notifications" />
+
+    <item
+        android:id="@+id/navigation_verVentas"
+        android:icon="@drawable/profit"
+        android:title="@string/h_ventas" />
+
+
+    <item
+        android:id="@+id/navigation_verProductos"
+        android:icon="@drawable/product"
+        android:title="@string/h_productos" />
+
+</menu>
