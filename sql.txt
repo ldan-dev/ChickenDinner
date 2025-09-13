@@ -1,0 +1,65 @@
+-- Crear la base de datos
+CREATE DATABASE IF NOT EXISTS chicken_dinner;
+
+-- Usar la base de datos chicken_dinner
+USE chicken_dinner;
+
+-- Crear la tabla Productos
+CREATE TABLE IF NOT EXISTS Productos (
+    id INTEGER PRIMARY KEY,
+    nombre VARCHAR,
+    costo FLOAT,
+    cantidad INT,
+    precio_unitario FLOAT,
+    precio_venta FLOAT,
+    ingresos FLOAT,
+    ganancia_neta FLOAT,
+    ganancia_unitaria FLOAT,
+    porcentaje_ganancia FLOAT,
+    n_compra INT
+);
+
+-- Crear la tabla Ventas
+CREATE TABLE IF NOT EXISTS Ventas (
+    id INTEGER PRIMARY KEY,
+    dia VARCHAR,
+    ingresos FLOAT
+);
+
+-- Crear la tabla Ventas_Productos para la relación muchos a muchos
+CREATE TABLE IF NOT EXISTS Ventas_Productos (
+    id INTEGER PRIMARY KEY,
+    venta_id INTEGER,
+    producto_id INTEGER,
+    cantidad INTEGER,
+    ingresos FLOAT,
+    FOREIGN KEY (venta_id) REFERENCES Ventas(id),
+    FOREIGN KEY (producto_id) REFERENCES Productos(id)
+);
+
+INSERT INTO Productos (nombre, costo, precio_unitario, precio_venta, ingresos, ganancia_neta, ganancia_unitaria, porcentaje_ganancia)
+VALUES ('Producto A', 10.0, 15.0, 20.0, 0.0, 0.0, 0.0, 0.0),
+       ('Producto B', 8.0, 12.0, 18.0, 0.0, 0.0, 0.0, 0.0);
+
+
+INSERT INTO Ventas (dia, ingresos)
+VALUES ('2024-03-29', 50.0),
+       ('2024-03-30', 70.0);
+
+
+INSERT INTO Ventas_Productos (venta_id, producto_id, cantidad)
+VALUES (1, 1, 2),  -- Se vendieron 2 unidades del Producto A en la venta 1
+       (1, 2, 3),  -- Se vendieron 3 unidades del Producto B en la venta 1
+       (2, 1, 1),  -- Se vendió 1 unidad del Producto A en la venta 2
+       (2, 2, 4);  -- Se vendieron 4 unidades del Producto B en la venta 2
+
+
+ //saber qué productos se vendieron en una venta específica y la cantidad de cada uno, segun el id de la venta 
+
+
+SELECT Productos.nombre, Productos.costo, Ventas_Productos.cantidad
+FROM Ventas_Productos
+JOIN Productos ON Ventas_Productos.producto_id = Productos.id
+WHERE Ventas_Productos.venta_id = ID_DESEADO;
+
+
